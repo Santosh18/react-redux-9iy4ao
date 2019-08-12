@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-function App (props) {
-  console.log(props);
-  return (
-    <div>
-      <h1>{props.name}</h1>
-      <h1>{props.surname}</h1>
-    </div>
-  );
-}
-render(<App name="santosh" surname="swami"/>, document.getElementById('root'));
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './store/reducer';
+
+const store = createStore(reducer);
+
+render(<Provider store={store}> <App /> </Provider>, document.getElementById('root'));
 
 
