@@ -11,6 +11,7 @@ class Counter extends Component {
         return (
             <div>
                 <CounterOutput value={this.props.ctr} />
+                <br/>
                 <CounterControl label="Increment : " clicked={this.props.onIncrementCounter} />
                 <CounterControl label="Decrement : " clicked={this.props.onDecrementCounter}  />
                 <CounterControl label="Add by 5 : " clicked={this.props.addValue}  />
