@@ -1,7 +1,7 @@
 import React from 'react';
 
 const counterOutput = (props) => (
-    <div className="CounterOutput">
+    <div>
         Current Counter: {props.value}
     </div>
 );

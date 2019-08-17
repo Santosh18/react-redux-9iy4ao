@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const counterControl = (props) => (
-    <div className="CounterControl" onClick={props.clicked}>
+    <div onClick={props.clicked}>
         {props.label}
     </div>
 );
